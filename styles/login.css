@@ -1,0 +1,169 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  margin-left: 17.5%;
+}
+label {
+  margin: 30px 0px 10px 0px;
+  font-size: 1.1em;
+  color: #e2e2e2;
+}
+#submit {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  margin-top: 40px;
+  padding-top: 2px;
+  padding-left: 15px;
+  border-radius: 100px;
+  border: 3px solid white;
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 1;
+}
+#submit:focus {
+  transform: scale(1.1);
+}
+#submit:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 100px;
+  z-index: -2;
+}
+#submit:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.3s;
+  border-radius: 5px;
+  z-index: -1;
+}
+#submit:hover {
+  color: black;
+  cursor: pointer;
+}
+#submit:hover:before {
+  width: 100%;
+}
+input {
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: #202020;
+  color: white;
+  padding-left: 20px;
+  font-size: 1em;
+}
+
+#pass {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+}
+#pass p {
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.name,
+h1 {
+  margin-left: 17.5%;
+}
+h1 {
+  font-size: 3.3em;
+  padding-bottom: 20px;
+  margin-top: 5px;
+}
+.login-container {
+  width: 49.5%;
+  padding-top: 15%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+.photo {
+  width: 50.5vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* --------------------------------------------------- MEDIA QUERIES ---------------------------------------------------*/
+
+@media (max-width: 1400px) and (min-width: 1020px) {
+  .photo {
+    width: 40vw;
+    background-position: center;
+  }
+  .login-container {
+    width: 80%;
+    padding-top: 40%;
+  }
+}
+
+@media (max-width: 1019px) and (min-width: 600px) {
+  input[type="text"]:focus {
+    width: 150px;
+  }
+  .photo {
+    width: 40vw;
+  }
+  .login-container {
+    width: 80%;
+    padding-top: 30%;
+  }
+}
+
+@media (max-width: 599px) {
+  main {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .photo {
+    width: 100vw;
+    height: 35vh;
+    background-position: top;
+  }
+  .login-container {
+    width: 100vw;
+    padding-top: 8%;
+  }
+  .name,
+  h1 {
+    margin-left: 5%;
+  }
+  h1 {
+    font-size: 2.1em;
+    margin-bottom: 0;
+  }
+  form {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0;
+  }
+
+  #submit {
+    margin-top: 0;
+  }
+}

@@ -1,118 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Banyon Elm - Videos</title>
-        <link rel="icon" href="../imgs/banyon-elm-logo.png">
-        <script src="https://kit.fontawesome.com/2e819d9c9f.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <header><a href="../index.html">Banyon Elm</a></header>
-            <div id="nav-container">
-                <div class="bg"></div>
-                <div class="button" tabindex="0">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </div>
-                <div id="nav-content" tabindex="0">
-                    <ul>
-                      <li><a href="../index.html"><i class="fas fa-newspaper"></i> News</a></li>
-                      <li><a class="active" href="index.html"><i class="fas fa-video"></i> Videos</a></li>
-                      <li><a href="../faq/index.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                      <li><a href="../credits/index.html"><i class="fas fa-ellipsis-h"></i> Credits</a></li>
-                      <li class="hide-me"><a href="../login/index.html"><i class="fas fa-user-circle"></i> My Account</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="wrap">
-                <form action="" autocomplete="on">
-                    <input id="search" name="search" type="text" placeholder="Search...">
-                    <input id="search_submit" type="submit">
-                </form>
-            </div>
-
-            <a href="../login/index.html"><h4 id="account"><i class="fas fa-user-circle"></i></h4></a>
-       
-        <main>
-            <div class="background" style="background-image: url(../imgs/blackfish.gif);">
-                <div class="caption">
-                    <p id="feat">FEATURED</p>
-                    <h1>Blackfish</h1>
-                    <p>The story of Tilikum, a captive killer whale that has taken the lives of several people, underscores problems within the sea-park industry, man's relationship to nature, and how little has been learned about these highly intelligent mammals.</p>
-                    <a href="video/index.html"><button id="watch"><i class="fas fa-play"></i> WATCH NOW</button></a>
-                </div>
-            </div>
-        </main>
-        <div class="topics">
-            <ul id="sections">
-                <a id="section-head"><li><i class="fas fa-align-left"></i> Sections <i class="fas fa-chevron-down"></i></li></a>
-                <ul class="section-d">
-                    <li><a class="active" href="index.html"><i class="fas fa-medal"></i> Editor's Picks</a></li>
-                    <li><a href="#"><i class="fas fa-fire"></i> Popular</a></li>
-                    <li><a href="#"><i class="fas fa-history"></i> Recently Added</a></li>
-                    <li><a href="#"><i class="fas fa-list-ul"></i> Playlists</a></li>
-                </ul>
-            </ul>
-        </div> 
-
-        <h2 id="head"><i class="fas fa-medal"></i> Editor's Picks</h2>
-        <div class="videos">
-            <div class="video-1">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/urRVZ4SW7WU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rNUYdgIyaPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-3">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_2yCIwmNuLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-4">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OFS8SpwioZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-5">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/05Gc2lANyTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KpYhePFx1qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-7">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JzeP0DKSqdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-8">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/t6jVGswLPd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8p8tFcIQ8K4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Banyon Elm - Videos</title>
+    <link rel="icon" href="../imgs/banyon-elm-logo.png" />
+    <script
+      src="https://kit.fontawesome.com/2e819d9c9f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/reel.css" />
+  </head>
+  <body>
+    <header id="nav-container">
+      <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div id="nav-content" tabindex="0">
+        <ul>
+          <li>
+            <a href="../"><i class="fas fa-newspaper"></i> News</a>
+          </li>
+          <li>
+            <a href="./" class="active"><i class="fas fa-video"></i> Videos</a>
+          </li>
+          <li>
+            <a href="../faq/"><i class="fas fa-question-circle"></i> FAQ</a>
+          </li>
+          <li>
+            <a href="../credits/"><i class="fas fa-ellipsis-h"></i> Credits</a>
+          </li>
+          <li class="hide-me">
+            <a href="../login/"
+              ><i class="fas fa-user-circle"></i> My Account</a
+            >
+          </li>
+        </ul>
+      </div>
+      <a id="home" href="../">Banyon Elm</a>
+      <div id="nav-utilities">
+        <div id="wrap">
+          <form action="" autocomplete="on">
+            <input
+              id="search"
+              name="search"
+              type="text"
+              placeholder="Search..."
+            />
+            <input id="search_submit" type="submit" />
+          </form>
         </div>
 
-        <footer>
-            <div class="logo-container">
-                <a href="index.html" class="logo">Banyon Elm</a>
-            </div>
-            <ul class="footer">
-                <li><a id="first" href="../index.html"><i class="fas fa-newspaper"></i> News</a></li>
-                <li><a href="index.html"><i class="fas fa-video"></i> Videos</a></li>
-                <li><a href="../faq/index.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                <li><a href="../credits/index.html"><i class="fas fa-ellipsis-h"></i> Credits</a></li>
-            </ul>
-            <ul class="legal-info">
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">About Banyon Elm</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">Accesibility</a></li>
-                <li><a href="#">Parental Guidance</a></li>
-                <li><a href="#">Contact Banyon Elm</a></li>
-                <li><a href="#">Get Personalised Newsletters</a></li>
-                <li><a href="#">Why you can trust Banyon Elm</a></li>
-            </ul>
-        </footer>
+        <a href="../login/">
+          <i id="account" class="fas fa-user-circle"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div
+        class="background"
+        style="background-image: url(../imgs/blackfish.gif)"
+      >
+        <div class="caption">
+          <p id="feat">FEATURED</p>
+          <h1>Blackfish</h1>
+          <p>
+            The story of Tilikum, a captive killer whale that has taken the
+            lives of several people, underscores problems within the sea-park
+            industry, man's relationship to nature, and how little has been
+            learned about these highly intelligent mammals.
+          </p>
+          <a href="video/index.html"
+            ><button id="watch">
+              <i class="fas fa-play"></i> WATCH NOW
+            </button></a
+          >
+        </div>
+      </div>
+    </main>
+    <div class="topics">
+      <ul id="sections">
+        <a id="section-head"
+          ><li>
+            <i class="fas fa-align-left"></i> Sections
+            <i class="fas fa-chevron-down"></i></li
+        ></a>
+        <ul class="section-d">
+          <li>
+            <a class="active" href="index.html"
+              ><i class="fas fa-medal"></i> Editor's Picks</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-fire"></i> Popular</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-history"></i> Recently Added</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-list-ul"></i> Playlists</a>
+          </li>
+        </ul>
+      </ul>
+    </div>
 
-    </body>
+    <h2 id="head"><i class="fas fa-medal"></i> Editor's Picks</h2>
+    <div class="videos">
+      <div class="video-1">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/urRVZ4SW7WU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video-2">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/rNUYdgIyaPM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video-3">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/_2yCIwmNuLE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video-4">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/OFS8SpwioZ4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video-5">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/05Gc2lANyTQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video-6">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KpYhePFx1qo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video-7">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JzeP0DKSqdQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video-8">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/t6jVGswLPd8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video-9">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8p8tFcIQ8K4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <div class="logo-container">
+        <a href="index.html" class="logo">Banyon Elm</a>
+      </div>
+      <ul class="footer">
+        <li>
+          <a id="first" href="../index.html"
+            ><i class="fas fa-newspaper"></i> News</a
+          >
+        </li>
+        <li>
+          <a href="index.html"><i class="fas fa-video"></i> Videos</a>
+        </li>
+        <li>
+          <a href="../faq/index.html"
+            ><i class="fas fa-question-circle"></i> FAQ</a
+          >
+        </li>
+        <li>
+          <a href="../credits/index.html"
+            ><i class="fas fa-ellipsis-h"></i> Credits</a
+          >
+        </li>
+      </ul>
+      <ul class="legal-info">
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">About Banyon Elm</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Accesibility</a></li>
+        <li><a href="#">Parental Guidance</a></li>
+        <li><a href="#">Contact Banyon Elm</a></li>
+        <li><a href="#">Get Personalised Newsletters</a></li>
+        <li><a href="#">Why you can trust Banyon Elm</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>

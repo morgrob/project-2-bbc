@@ -1,0 +1,117 @@
+main {
+  background: linear-gradient(
+    to right,
+    #c32479 0,
+    #5a318d 25%,
+    #4070b8 75%,
+    #69b377 100%
+  );
+  height: 25vh;
+  margin-left: -8px;
+}
+main h1 {
+  text-align: center;
+  padding-top: 12vh;
+  font-size: 2.2em;
+}
+.list {
+  list-style: inherit;
+}
+.section {
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 50px;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 1.5em;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.list li {
+  font-size: 1.2em;
+}
+.list li a {
+  color: lightskyblue;
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+}
+.list li a:hover {
+  color: white;
+}
+/* --------------------------------------------------- HEADER/NAVIGATION ---------------------------------------------------*/
+
+/* --------------------------------------------------- MEDIA QUERIES ---------------------------------------------------*/
+
+@media (max-width: 1400px) and (min-width: 1020px) {
+  main {
+    height: 15vh;
+  }
+  main h1 {
+    padding-top: 7vh;
+    font-size: 2em;
+  }
+  .section {
+    width: 70vw;
+    margin-right: 15vw;
+    margin-left: 15vw;
+  }
+  h2 {
+    margin-top: 30px;
+  }
+  li {
+    font-size: 1em;
+  }
+}
+@media (max-width: 1019px) and (min-width: 600px) {
+  main {
+    height: 15vh;
+  }
+  main h1 {
+    padding-top: 7vh;
+    font-size: 1.8em;
+  }
+  li a {
+    font-size: 0.9em;
+  }
+  .list li {
+    font-size: 1em;
+  }
+  .section {
+    width: 80vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 599px) {
+  main {
+    height: 15vh;
+  }
+  main h1 {
+    padding-top: 8vh;
+    font-size: 1.6em;
+  }
+  li a {
+    font-size: 0.9em;
+  }
+  .list li {
+    font-size: 1em;
+  }
+  .section {
+    width: 85vw;
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 1.3em;
+  }
+}

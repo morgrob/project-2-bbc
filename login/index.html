@@ -1,83 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Banyon Elm - Sign In</title>
-        <link rel="icon" href="../imgs/banyon-elm-logo.png">
-        <script src="https://kit.fontawesome.com/2e819d9c9f.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <header><a href="../index.html">Banyon Elm</a></header>
-            <div id="nav-container">
-                <div class="bg"></div>
-                <div class="button" tabindex="0">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </div>
-                <div id="nav-content" tabindex="0">
-                    <ul>
-                      <li><a href="../index.html"><i class="fas fa-newspaper"></i> News</a></li>
-                      <li><a href="../reel/index.html"><i class="fas fa-video"></i> Videos</a></li>
-                      <li><a href="../faq/index.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                      <li><a href="../credits/index.html"><i class="fas fa-ellipsis-h"></i> Credits</a></li>
-                      <li class="hide-me"><a class="active" href="index.html"><i class="fas fa-user-circle"></i> My Account</a></li>
-                    </ul>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Banyon Elm - Sign In</title>
+    <link rel="icon" href="../imgs/banyon-elm-logo.png" />
+    <script
+      src="https://kit.fontawesome.com/2e819d9c9f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/login.css" />
+    <script src="../scripts/login.js"></script>
+  </head>
+  <body>
+    <header id="nav-container">
+      <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div id="nav-content" tabindex="0">
+        <ul>
+          <li>
+            <a href="../"><i class="fas fa-newspaper"></i> News</a>
+          </li>
+          <li>
+            <a href="../reel/"><i class="fas fa-video"></i> Videos</a>
+          </li>
+          <li>
+            <a href="../faq/"><i class="fas fa-question-circle"></i> FAQ</a>
+          </li>
+          <li>
+            <a href="../credits/"><i class="fas fa-ellipsis-h"></i> Credits</a>
+          </li>
+          <li class="hide-me">
+            <a href="../login/"
+              ><i class="fas fa-user-circle"></i> My Account</a
+            >
+          </li>
+        </ul>
+      </div>
+      <a id="home" href="../">Banyon Elm</a>
+      <div id="nav-utilities">
+        <div id="wrap">
+          <form action="" autocomplete="on">
+            <input
+              id="search"
+              name="search"
+              type="text"
+              placeholder="Search..."
+            />
+            <input id="search_submit" type="submit" />
+          </form>
+        </div>
 
-            <div id="wrap">
-                <form action="" autocomplete="on">
-                    <input class="input" id="search" name="search" type="text" placeholder="Search...">
-                    <input class="input" id="search_submit" type="submit">
-                </form>
-            </div>
+        <a href="../login/">
+          <i id="account" class="fas fa-user-circle"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div
+        class="photo"
+        style="background-image: url(../imgs/seattle.jpeg)"
+      ></div>
+      <div class="login-container">
+        <div class="name">
+          <a href="../index.html"><img src="../imgs/banyon-elm-logo.png" /></a>
+        </div>
+        <h1>Sign up</h1>
+        <form action="#" method="post">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            placeholder="example@email.com"
+            name="email"
+            required
+          />
+          <label for="pword">Password</label>
+          <input
+            type="password"
+            placeholder="Choose a password"
+            name="pword"
+            id="myInput"
+            required
+          />
+          <label id="pass"
+            ><input type="checkbox" onclick="myFunction()" />
+            <p>Show password</p></label
+          >
+          <button id="submit" type="submit">Sign up</button>
+        </form>
+      </div>
+    </main>
 
-            <a href="index.html"><h4 id="account"><i class="fas fa-user-circle"></i></h4></a>
-
-            <main>
-                <div class="photo" style="background-image: url(../imgs/seattle.jpeg);"></div>
-                <div class="login-container">
-                    <div class="name"><a href="../index.html"><img src="../imgs/banyon-elm-logo.png"></a></div>
-                    <h1>Sign up</h1>
-                    <form action="#" method="post">
-                        <label for="email">Email address</label>
-                        <input type="email" placeholder="example@email.com" name="email" required>
-                        <label for="pword">Password</label>
-                        <input type="password" placeholder="Choose a password" name="pword" id="myInput" required>
-                        <label id="pass"><input type="checkbox" onclick="myFunction()"> <p>Show password</p></label>
-                        <button id="submit" type="submit">Sign up</button>
-                    </form>
-
-                </div>
-            </main>
-
-            <footer>
-                <div class="logo-container">
-                    <a href="../index.html" class="logo">Banyon Elm</a>
-                </div>
-                <ul class="footer">
-                    <li><a id="first" href="../index.html"><i class="fas fa-newspaper"></i> News</a></li>
-                    <li><a href="../reel/index.html"><i class="fas fa-video"></i> Videos</a></li>
-                    <li><a href="../faq/index.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                    <li><a href="../credits/index.html"><i class="fas fa-ellipsis-h"></i> Credits</a></li>
-                </ul>
-                <ul class="legal-info">
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">About Banyon Elm</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">Accesibility</a></li>
-                    <li><a href="#">Parental Guidance</a></li>
-                    <li><a href="#">Contact Banyon Elm</a></li>
-                    <li><a href="#">Get Personalised Newsletters</a></li>
-                    <li><a href="#">Why you can trust Banyon Elm</a></li>
-                </ul>
-            </footer>
-        <script src="main.js"></script> 
-    </body>
+    <footer>
+      <div class="logo-container">
+        <a href="../index.html" class="logo">Banyon Elm</a>
+      </div>
+      <ul class="footer">
+        <li>
+          <a id="first" href="../index.html"
+            ><i class="fas fa-newspaper"></i> News</a
+          >
+        </li>
+        <li>
+          <a href="../reel/index.html"><i class="fas fa-video"></i> Videos</a>
+        </li>
+        <li>
+          <a href="../faq/index.html"
+            ><i class="fas fa-question-circle"></i> FAQ</a
+          >
+        </li>
+        <li>
+          <a href="../credits/index.html"
+            ><i class="fas fa-ellipsis-h"></i> Credits</a
+          >
+        </li>
+      </ul>
+      <ul class="legal-info">
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">About Banyon Elm</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Accesibility</a></li>
+        <li><a href="#">Parental Guidance</a></li>
+        <li><a href="#">Contact Banyon Elm</a></li>
+        <li><a href="#">Get Personalised Newsletters</a></li>
+        <li><a href="#">Why you can trust Banyon Elm</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>

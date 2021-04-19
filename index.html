@@ -1,181 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Banyon Elm - News</title>
-        <link rel="icon" href="imgs/banyon-elm-logo.png">
-        <script src="https://kit.fontawesome.com/2e819d9c9f.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="news/index.css">
-    </head>
-    <body>
-        <header><a href="index.html">Banyon Elm</a></header>
-            <div id="nav-container">
-                <div class="button" tabindex="0">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </div>
-                <div id="nav-content" tabindex="0">
-                    <ul>
-                      <li><a class="active" href="index.html"><i class="fas fa-newspaper"></i> News</a></li>
-                      <li><a href="reel/index.html"><i class="fas fa-video"></i> Videos</a></li>
-                      <li><a href="faq/index.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                      <li><a href="credits/index.html"><i class="fas fa-ellipsis-h"></i> Credits</a></li>
-                      <li class="hide-me"><a href="login/index.html"><i class="fas fa-user-circle"></i> My Account</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="wrap">
-                <form action="" autocomplete="on">
-                    <input id="search" name="search" type="text" placeholder="Search...">
-                    <input id="search_submit" type="submit">
-                </form>
-            </div>
-
-            <a href="login/index.html"><h4 id="account"><i class="fas fa-user-circle"></i></h4></a>
-       
-        <main>
-            <div class="background" style="background-image: url(imgs/trees.jpeg);">
-                <div class="caption">
-                    
-                    <h1>US cities are losing 36 million trees a year. Here's why it matters.</h1>
-                    
-                    <p id="info">If you’re looking for a reason to care about tree loss, this summer’s record-breaking heat waves might be it. Trees can lower summer daytime temperatures by as much as 10 degrees Fahrenheit, according to a recent study.</p>
-                    <div id="head-info">
-                        <p id="date"><i class="far fa-clock"></i> 2 hours ago</p>
-                        <p id="section-main"><i class="fas fa-globe-americas"></i> United States</p>
-                    </div>
-                    <a href="news/articles/index.html"><button id="read">Read more <i class="fas fa-arrow-right"></i></button></a>
-                </div>
-            </div>
-        </main>
-        <div class="topics">
-            <ul id="sections">
-                <a id="section-head"><li><i class="fas fa-align-left"></i> Sections <i class="fas fa-chevron-down"></i></li></a>
-                <ul class="section-d">
-                    <li><a class="active" href="index.html"><i class="fas fa-star"></i> Featured</a></li>
-                    <li><a href="#"><i class="fas fa-globe-americas"></i> United States</a></li>
-                    <li><a href="#"><i class="fas fa-landmark"></i> Politics</a></li>
-                    <li><a href="#"><i class="fas fa-globe"></i> World</a></li>
-                    <li><a href="#"><i class="fas fa-virus"></i> Coronavirus</a></li>
-                    <li><a href="#"><i class="fas fa-laptop"></i> Tech</a></li>
-                    <li><a href="#"><i class="fas fa-fire"></i> Pop Culture</a></li>
-                    <li><a href="#"><i class="far fa-futbol"></i> Sports</a></li>
-                </ul>
-            </ul>
-        </div> 
-
-        <h2><i class="fas fa-star"></i> Featured Articles</h2>
-        <div class="story-container">
-            <div class="article story-1" style="background-image: url(imgs/featured-california.png);">
-                <span class="title"><h3>California to 'fully reopen' June 15</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 1 hour ago</p>
-                <p class="icon2"><i class="fas fa-globe-americas"></i> United States</p></div></span>
-            </div>
-            <div class="article story-2" style="background-image: url(imgs/featured-blm.png);">
-                <span class="title"><h3>Here's what happened today in the Derek Chauvin Trial</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 1 hour ago</p>
-                <p class="icon2"><i class="fas fa-globe-americas"></i> United States</p></div></span>
-            </div>
-            <div class="article story-3" style="background-image: url(imgs/featured-racism.png);">
-                <span class="title"><h3>US Asian veteran shows scars to call out racism</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 5 days ago</p>
-                <p class="icon2"><i class="fas fa-globe-americas"></i> United States</p></div></span>
-            </div>
-            <div class="article story-4" style="background-image: url(imgs/featured-disney.png);">
-                <span class="title"><h3>Disney announces collaboration with African entertainment company</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 2 hours ago</p>
-                <p class="icon2"><i class="fas fa-globe"></i> World</p></div></span>
-            </div>
-            <div class="article story-5" style="background-image: url(imgs/featured-arkansas.png);">
-                <span class="title"><h2>Arkansas becomes first state to outlaw gender-affirming treatment for trans youth</h2>
-                <p class="text">Arkansas became the first state in the US to prohibit physicians from providing gender-affirming treatment for trans people under age 18.</p>
-                <div class="icons"><p><i class="far fa-clock"></i> 30 minutes ago</p>
-                <p class="icon2"><i class="fas fa-landmark"></i> Politics</p></div></span>
-            </div>
-
-            <div class="article story-6" style="background-image: url(imgs/featured-olympics.png);">
-                <span class="title"><h2>North Korea to skip Tokyo Olympics over Covid-19 fears</h2>
-                <p class="text">North Korea has announced it will not take part in the Tokyo Olympics this year, saying the decision is to protect its athletes from Covid-19.</p>
-                <div class="icons"><p><i class="far fa-clock"></i> 1 day ago</p>
-                <p class="icon2"><i class="fas fa-globe-americas"></i> United States</p></div></span>
-            </div>
-            <div class="article story-7" style="background-image: url(imgs/featured-citrus.png);">
-                <span class="title"><h3>This little-known Japanese fruit now has a cult following</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 1 day ago</p>
-                <p class="icon2"><i class="fas fa-globe"></i> World</p></div></span>
-            </div>
-            <div class="article story-8" style="background-image: url(imgs/featured-forbes.png);">
-                <span class="title"><h3>MJ Makes Forbes' Billionaires List with $1.6B</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 1 day ago</p>
-                <p class="icon2"><i class="far fa-futbol"></i> Sports</p></div></span>
-            </div>
-            <div class="article story-9" style="background-image: url(imgs/featured-netflix.png);">
-                <span class="title"><h3>Harry and Meghan announce 1st project with Netflix</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 2 hours ago</p>
-                <p class="icon2"><i class="fas fa-fire"></i> Pop Culture</p></div></span>
-            </div>
-            <div class="article story-10" style="background-image: url(imgs/featured-sick.png);">
-                <span class="title"><h3>Common cold can 'boot Covid out of cells'</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 1 week ago</p>
-                <p class="icon2"><i class="fas fa-virus"></i> Coronavirus</p></div></span>
-            </div>
-
-            <div class="article story-11" style="background-image: url(imgs/featured-fallon.png);">
-                <span class="title"><h3>Jimmy Fallon invites TikTok creators to 'Tonight Show' after Addison Rae backlash</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 1 day ago</p>
-                <p class="icon2"><i class="fas fa-fire"></i> Pop Culture</p></div></span>
-            </div>
-            <div class="article story-12" style="background-image: url(imgs/featured-brady.png);">
-                <span class="title"><h3>Tom Brady is launching an NFT company</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 3 hours ago</p>
-                <p class="icon2"><i class="fas fa-laptop"></i> Tech</p></div></span>
-            </div>
-            <div class="article story-13" style="background-image: url(imgs/featured-vacc.png);">
-                <span class="title"><h3>Biden moves deadline for all US adults to be eligible for Covid vaccine to April 19</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 5 days ago</p>
-                <p class="icon2"><i class="fas fa-landmark"></i> Politics</p></div></span>
-            </div>
-            <div class="article story-14" style="background-image: url(imgs/featured-arctic.png);">
-                <span class="title"><h3>Satellite images show huge Russian military buildup in the Arctic</h3>
-                <div class="icons"><p><i class="far fa-clock"></i> 1 hour ago</p>
-                <p class="icon2"><i class="fas fa-globe"></i> World</p></div></span>
-            </div>
-            <div class="article story-15" style="background-image: url(imgs/featured-siri.png);">
-                <span class="title"><h2>Apple will no longer make Siri's voice female by default</h2>
-                <p class="text">The company said Wednesday that its mobile devices will ask users to pick from a range of voices when they set up the virtual assistant.</p>
-                <div class="icons"><p><i class="far fa-clock"></i> 3 days ago</p>
-                <p class="icon2"><i class="fas fa-laptop"></i> Tech</p></div></span>
-            </div>
-            
-            
-            
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Banyon Elm - News</title>
+    <link rel="icon" href="imgs/banyon-elm-logo.png" />
+    <script
+      src="https://kit.fontawesome.com/2e819d9c9f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+  </head>
+  <body>
+    <header id="nav-container">
+      <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div id="nav-content" tabindex="0">
+        <ul>
+          <li>
+            <a class="active" href="./"
+              ><i class="fas fa-newspaper"></i> News</a
+            >
+          </li>
+          <li>
+            <a href="./reel/"><i class="fas fa-video"></i> Videos</a>
+          </li>
+          <li>
+            <a href="./faq/"><i class="fas fa-question-circle"></i> FAQ</a>
+          </li>
+          <li>
+            <a href="./credits/"><i class="fas fa-ellipsis-h"></i> Credits</a>
+          </li>
+          <li class="hide-me">
+            <a href="./login/"><i class="fas fa-user-circle"></i> My Account</a>
+          </li>
+        </ul>
+      </div>
+      <a id="home" href="./">Banyon Elm</a>
+      <div id="nav-utilities">
+        <div id="wrap">
+          <form action="" autocomplete="on">
+            <input
+              id="search"
+              name="search"
+              type="text"
+              placeholder="Search..."
+            />
+            <input id="search_submit" type="submit" />
+          </form>
         </div>
-        <footer>
-            <div class="logo-container">
-                <a href="index.html" class="logo">Banyon Elm</a>
-            </div>
-            <ul class="footer">
-                <li><a id="first" href="index.html"><i class="fas fa-newspaper"></i> News</a></li>
-                <li><a href="reel/index.html"><i class="fas fa-video"></i> Videos</a></li>
-                <li><a href="faq/index.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                <li><a href="credits/index.html"><i class="fas fa-ellipsis-h"></i> Credits</a></li>
-            </ul>
-            <ul class="legal-info">
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">About Banyon Elm</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">Accesibility</a></li>
-                <li><a href="#">Parental Guidance</a></li>
-                <li><a href="#">Contact Banyon Elm</a></li>
-                <li><a href="#">Get Personalised Newsletters</a></li>
-                <li><a href="#">Why you can trust Banyon Elm</a></li>
-            </ul>
-        </footer>
-    </body>
+
+        <a href="./login/">
+          <i id="account" class="fas fa-user-circle"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="background" style="background-image: url(imgs/trees.jpeg)">
+        <div class="caption">
+          <h1 class="playfair">
+            US cities are losing 36 million trees a year. Here's why it matters.
+          </h1>
+
+          <p id="info">
+            If you’re looking for a reason to care about tree loss, this
+            summer’s record-breaking heat waves might be it. Trees can lower
+            summer daytime temperatures by as much as 10 degrees Fahrenheit,
+            according to a recent study.
+          </p>
+          <div id="head-info">
+            <p id="date"><i class="far fa-clock"></i> 2 hours ago</p>
+            <p id="section-main">
+              <i class="fas fa-globe-americas"></i> United States
+            </p>
+          </div>
+          <a href="news/articles/index.html"
+            ><button id="read">
+              Read more <i class="fas fa-arrow-right"></i></button
+          ></a>
+        </div>
+      </div>
+    </main>
+    <div class="topics">
+      <ul id="sections">
+        <a id="section-head"
+          ><li>
+            <i class="fas fa-align-left"></i> Sections
+            <i class="fas fa-chevron-down"></i></li
+        ></a>
+        <ul class="section-d">
+          <li>
+            <a class="active" href="index.html"
+              ><i class="fas fa-star"></i> Featured</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-globe-americas"></i> United States</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-landmark"></i> Politics</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-globe"></i> World</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-virus"></i> Coronavirus</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-laptop"></i> Tech</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-fire"></i> Pop Culture</a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-futbol"></i> Sports</a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+
+    <h2 class="story-heading"><i class="fas fa-star"></i> Featured Articles</h2>
+    <div class="story-container">
+      <div
+        class="article-card story-1"
+        style="background-image: url(imgs/featured-california.png)"
+      >
+        <span class="title"
+          ><h3>California to 'fully reopen' June 15</h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 1 hour ago</p>
+            <p class="icon2">
+              <i class="fas fa-globe-americas"></i> United States
+            </p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-2"
+        style="background-image: url(imgs/featured-blm.png)"
+      >
+        <span class="title"
+          ><h3>Here's what happened today in the Derek Chauvin Trial</h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 1 hour ago</p>
+            <p class="icon2">
+              <i class="fas fa-globe-americas"></i> United States
+            </p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-3"
+        style="background-image: url(imgs/featured-racism.png)"
+      >
+        <span class="title"
+          ><h3>US Asian veteran shows scars to call out racism</h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 5 days ago</p>
+            <p class="icon2">
+              <i class="fas fa-globe-americas"></i> United States
+            </p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-4"
+        style="background-image: url(imgs/featured-disney.png)"
+      >
+        <span class="title"
+          ><h3>
+            Disney announces collaboration with African entertainment company
+          </h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 2 hours ago</p>
+            <p class="icon2"><i class="fas fa-globe"></i> World</p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-5"
+        style="background-image: url(imgs/featured-arkansas.png)"
+      >
+        <span class="title"
+          ><h2>
+            Arkansas becomes first state to outlaw gender-affirming treatment
+            for trans youth
+          </h2>
+          <p class="text">
+            Arkansas became the first state in the US to prohibit physicians
+            from providing gender-affirming treatment for trans people under age
+            18.
+          </p>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 30 minutes ago</p>
+            <p class="icon2"><i class="fas fa-landmark"></i> Politics</p>
+          </div></span
+        >
+      </div>
+
+      <div
+        class="article-card story-6"
+        style="background-image: url(imgs/featured-olympics.png)"
+      >
+        <span class="title"
+          ><h2>North Korea to skip Tokyo Olympics over Covid-19 fears</h2>
+          <p class="text">
+            North Korea has announced it will not take part in the Tokyo
+            Olympics this year, saying the decision is to protect its athletes
+            from Covid-19.
+          </p>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 1 day ago</p>
+            <p class="icon2">
+              <i class="fas fa-globe-americas"></i> United States
+            </p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-7"
+        style="background-image: url(imgs/featured-citrus.png)"
+      >
+        <span class="title"
+          ><h3>This little-known Japanese fruit now has a cult following</h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 1 day ago</p>
+            <p class="icon2"><i class="fas fa-globe"></i> World</p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-8"
+        style="background-image: url(imgs/featured-forbes.png)"
+      >
+        <span class="title"
+          ><h3>MJ Makes Forbes' Billionaires List with $1.6B</h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 1 day ago</p>
+            <p class="icon2"><i class="far fa-futbol"></i> Sports</p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-9"
+        style="background-image: url(imgs/featured-netflix.png)"
+      >
+        <span class="title"
+          ><h3>Harry and Meghan announce 1st project with Netflix</h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 2 hours ago</p>
+            <p class="icon2"><i class="fas fa-fire"></i> Pop Culture</p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-10"
+        style="background-image: url(imgs/featured-sick.png)"
+      >
+        <span class="title"
+          ><h3>Common cold can 'boot Covid out of cells'</h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 1 week ago</p>
+            <p class="icon2"><i class="fas fa-virus"></i> Coronavirus</p>
+          </div></span
+        >
+      </div>
+
+      <div
+        class="article-card story-11"
+        style="background-image: url(imgs/featured-fallon.png)"
+      >
+        <span class="title"
+          ><h3>
+            Jimmy Fallon invites TikTok creators to 'Tonight Show' after Addison
+            Rae backlash
+          </h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 1 day ago</p>
+            <p class="icon2"><i class="fas fa-fire"></i> Pop Culture</p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-12"
+        style="background-image: url(imgs/featured-brady.png)"
+      >
+        <span class="title"
+          ><h3>Tom Brady is launching an NFT company</h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 3 hours ago</p>
+            <p class="icon2"><i class="fas fa-laptop"></i> Tech</p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-13"
+        style="background-image: url(imgs/featured-vacc.png)"
+      >
+        <span class="title"
+          ><h3>
+            Biden moves deadline for all US adults to be eligible for Covid
+            vaccine to April 19
+          </h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 5 days ago</p>
+            <p class="icon2"><i class="fas fa-landmark"></i> Politics</p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-14"
+        style="background-image: url(imgs/featured-arctic.png)"
+      >
+        <span class="title"
+          ><h3>
+            Satellite images show huge Russian military buildup in the Arctic
+          </h3>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 1 hour ago</p>
+            <p class="icon2"><i class="fas fa-globe"></i> World</p>
+          </div></span
+        >
+      </div>
+      <div
+        class="article-card story-15"
+        style="background-image: url(imgs/featured-siri.png)"
+      >
+        <span class="title"
+          ><h2>Apple will no longer make Siri's voice female by default</h2>
+          <p class="text">
+            The company said Wednesday that its mobile devices will ask users to
+            pick from a range of voices when they set up the virtual assistant.
+          </p>
+          <div class="icons">
+            <p><i class="far fa-clock"></i> 3 days ago</p>
+            <p class="icon2"><i class="fas fa-laptop"></i> Tech</p>
+          </div></span
+        >
+      </div>
+    </div>
+    <footer>
+      <div class="logo-container">
+        <a href="index.html" class="logo">Banyon Elm</a>
+      </div>
+      <ul class="footer">
+        <li>
+          <a id="first" href="index.html"
+            ><i class="fas fa-newspaper"></i> News</a
+          >
+        </li>
+        <li>
+          <a href="reel/index.html"><i class="fas fa-video"></i> Videos</a>
+        </li>
+        <li>
+          <a href="faq/index.html"
+            ><i class="fas fa-question-circle"></i> FAQ</a
+          >
+        </li>
+        <li>
+          <a href="credits/index.html"
+            ><i class="fas fa-ellipsis-h"></i> Credits</a
+          >
+        </li>
+      </ul>
+      <ul class="legal-info">
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">About Banyon Elm</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Accesibility</a></li>
+        <li><a href="#">Parental Guidance</a></li>
+        <li><a href="#">Contact Banyon Elm</a></li>
+        <li><a href="#">Get Personalised Newsletters</a></li>
+        <li><a href="#">Why you can trust Banyon Elm</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
